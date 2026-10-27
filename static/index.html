@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weekly Drop, an Aymora prototype</title>
+  <meta name="description" content="A working prototype of the engine behind one introduction per person, every week: a pool-wide weekly match, a fairness rule for people who missed out, and an honest quality floor.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%231e1217' d='M16 28C6 20 3 15 3 10.5 3 7 5.6 4.5 9 4.5c2.8 0 5 1.6 7 4.3 2-2.7 4.2-4.3 7-4.3 3.4 0 6 2.5 6 6C29 15 26 20 16 28z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header class="top">
+      <a class="mark" href="#drop" aria-label="Weekly Drop home">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#1e1217" d="M16 28C6 20 3 15 3 10.5 3 7 5.6 4.5 9 4.5c2.8 0 5 1.6 7 4.3 2-2.7 4.2-4.3 7-4.3 3.4 0 6 2.5 6 6C29 15 26 20 16 28z"/></svg>
+        <b>aymora</b><span>Weekly Drop prototype</span>
+      </a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#drop" data-nav="drop">Your drop</a>
+        <a href="#engine" data-nav="engine">Engine room</a>
+        <a href="#how" data-nav="how">How it works</a>
+      </nav>
+    </header>
+  </div>
+
+  <main id="main">
+    <section id="view-drop" class="wrap"></section>
+    <section id="view-engine" class="engine" hidden></section>
+    <section id="view-how" class="wrap" hidden></section>
+  </main>
+
+  <div class="wrap">
+    <footer>
+      A prototype for Aymora's Tech Challenge, built by Shubh Bohra. Everyone in the pool is synthetic and nothing you enter leaves this demo's memory.
+    </footer>
+  </div>
+  <script src="/static/engine.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>
