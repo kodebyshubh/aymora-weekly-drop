@@ -114,7 +114,7 @@ def _world(sid: str) -> World:
 
 
 # ---- routes -------------------------------------------------------------------------------------
-@app.get("/api/health")
+@app.api_route("/api/health", methods=["GET", "HEAD"])
 def health():
     return {"ok": True, "llm": llm.enabled()}
 
@@ -341,7 +341,7 @@ def _warm() -> None:
 
 
 # ---- static -------------------------------------------------------------------------------------
-@app.get("/")
+@app.api_route("/", methods=["GET", "HEAD"])
 def index():
     return FileResponse(STATIC / "index.html")
 
